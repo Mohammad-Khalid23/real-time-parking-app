@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import injectTapEventPlugin from 'react-tap-event-plugin';
+// import injectTapEventPlugin from 'react-tap-event-plugin';
 import * as firebase from 'firebase'
 import FeedBack from './components/feedBack.js'
 import ViewSlots from './components/viewSlots.js'
@@ -19,7 +19,7 @@ import Reciept from './components/reciept.js'
 
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-injectTapEventPlugin();
+// injectTapEventPlugin();
 class App extends Component {
 
   constructor() {

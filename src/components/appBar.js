@@ -133,7 +133,7 @@ class Navbar extends Component {
         if (localStorage.getItem('activeUser') === "offline") {
             return (
 
-                <AppBar title="Car Parking Sytem" showMenuIconButton={this.state.btn} onLeftIconButtonTouchTap={() => this._toggelDrawer()} >
+                <AppBar title="Car Parking Sytem" showMenuIconButton={this.state.btn} onClick={() => this._toggelDrawer()} >
                     {this.state.active ?
                         <FlatButton label="SignOut" default={true} style={style.button} onClick={this.signOut.bind(this)} />
                         :
@@ -149,7 +149,7 @@ class Navbar extends Component {
                 <div>
                     <MuiThemeProvider>
 
-                        <AppBar title="Real Time Parking Sytem" showMenuIconButton={this.state.btn} onLeftIconButtonTouchTap={() => this._toggelDrawer()}
+                        <AppBar title="Real Time Parking Sytem" showMenuIconButton={this.state.btn} onClick={() => this._toggelDrawer()}
                             iconElementRight={
                                 <span>
                                     {this.state.active ?
@@ -176,7 +176,7 @@ class Navbar extends Component {
                             </div>
                             :
                             <div>
-                                <MenuItem><Link to="/location" onClick={this._toggelDrawer.bind(this)}>Book parking</Link></MenuItem>
+                                <MenuItem className="app-bar"><Link to="/location" onClick={this._toggelDrawer.bind(this)}>Book parking</Link></MenuItem>
                                 <Divider />
                                 <MenuItem><Link to="/myParking" onClick={this._toggelDrawer.bind(this)}>My parkings</Link></MenuItem>
                                 <Divider />
