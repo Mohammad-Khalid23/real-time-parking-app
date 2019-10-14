@@ -3,7 +3,7 @@ import App from '../App.js'
 import * as firebase from 'firebase'
 import NavBar from './appBar.js'
 import Paper from 'material-ui/Paper';
-
+import Carousel from "./carousel";
 
 const style = {
     width: 400,
@@ -54,6 +54,7 @@ class User extends Component {
 
         return (
             <div>
+                <Carousel />
 
                 {
                     this.state.info.map((data, index) => (
