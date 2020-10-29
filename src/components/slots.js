@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import * as firebase from 'firebase'
 import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
-import ViewSlots from './viewSlots.js'
 import Dialog from 'material-ui/Dialog';
 
 const style = {
@@ -98,7 +97,6 @@ class Slots extends Component {
                                 var bookStart;
                                 var bookEnd;
                                 var bookDate;
-                                const check = false;
                                 for (var i = 0; i < array.length; i++) {
                                     bookStart = new Date(array[i].startTime).getTime()
                                     bookEnd = new Date(array[i].endTime).getTime()

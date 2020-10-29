@@ -2,24 +2,13 @@ import React, { Component } from 'react'
 import * as firebase from 'firebase'
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
-import { List, ListItem } from 'material-ui/List';
 import FlatButton from 'material-ui/FlatButton';
 import '../App.css';
-import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
-import FeedBacks from './feedBack.js'
-import BookParking from './bookParking.js'
-import ViewSlots from './viewSlots.js'
-import AddSlots from './addSlots.js'
-import FeedBack from './feedBack.js'
-import ViewBooking from './viewBooking.js'
-import MyParking from './myParking.js'
-import Login from './login.js'
-import App from '../App.js'
 import * as mat from 'material-ui'
 import Divider from 'material-ui/Divider';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 let style = {
     button: {
         color: '#fafbfc'

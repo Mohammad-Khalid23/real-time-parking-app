@@ -1,10 +1,8 @@
 import React, { Component } from "react"
-import App from '../App'
 import * as firebase from 'firebase'
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import PasswordField from 'material-ui-password-field'
-import { BrowserRouter as Link } from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 
 
@@ -31,8 +29,6 @@ class Signup extends Component {
         var name = this.state.name;
         var email = this.state.email;
         var password = this.state.password;
-        var number = this.state.number;
-
 
         if (name === undefined || email === undefined || password === undefined) {
             alert("Please fill Complete Form!!")

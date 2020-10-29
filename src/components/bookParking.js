@@ -1,16 +1,11 @@
 import React, { Component } from "react"
 import * as firebase from 'firebase'
 import RaisedButton from 'material-ui/RaisedButton';
-import TextField from 'material-ui/TextField';
 import Paper from 'material-ui/Paper';
-import MenuItem from 'material-ui/MenuItem';
 import DatePicker from 'material-ui/DatePicker';
-import Toggle from 'material-ui/Toggle';
 import TimePicker from 'material-ui/TimePicker';
-import Slots from './slots.js'
 import Dialog from 'material-ui/Dialog';
 
-import { BrowserRouter as Link } from 'react-router-dom';
 const style = {
     width: 400,
     margin: 20,
@@ -39,7 +34,6 @@ class BookParking extends Component {
 
         rootRef.on('value', snap => {
             var areaName = [];
-            var slots = [];
 
             var obj = snap.val();
             for (var key in obj) {
@@ -53,8 +47,6 @@ class BookParking extends Component {
     }
 
     bookParking() {
-
-        const auth = firebase.auth();
 
         if (this.state.bookingDate === undefined ||
             this.state.endTime === undefined || this.state.startTime === undefined) {

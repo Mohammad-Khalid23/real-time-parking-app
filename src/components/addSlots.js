@@ -6,7 +6,13 @@ import * as firebase from 'firebase'
 
 
 class AddSlots extends Component {
-
+    constructor(props){
+        super(props);
+        this.state = {
+            area: '',
+            slot: ''
+        }
+    }
 
     addArea() {
 
