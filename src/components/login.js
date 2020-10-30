@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import App from '../App'
 import * as firebase from 'firebase'
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import PasswordField from 'material-ui-password-field'
-import { BrowserRouter as Link } from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 
 
@@ -74,10 +72,6 @@ class Login extends Component {
 
 
             })
-
-        }
-        var obj = {
-            email: this.state.email,
 
         }
         console.log(this.state.email)

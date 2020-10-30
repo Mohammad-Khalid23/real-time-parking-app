@@ -1,29 +1,13 @@
-import React, { Component } from 'react'
-import App from '../App.js'
+import React from 'react'
 
-import NavBar from './appBar.js'
+function Reciept() {
+    return (
+        <div>
+            {/* <h1>Booking Reciept</h1> */}
+            <h1>Booked Successfully</h1>
+        </div>
 
-
-
-class Reciept extends Component {
-    componentDidMount() {
-// localStorage.setItem('park',null)
-    }
-
-
-    render() {
-
-
-
-        return (
-            <div>
-                {/* <h1>Booking Reciept</h1> */}
-                <h1>Booked Successfully</h1>
-            </div>
-
-        )
-    }
-
-
+    )
 }
+
 export default Reciept;

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import App from '../App.js'
 import * as firebase from 'firebase'
-import NavBar from './appBar.js'
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 

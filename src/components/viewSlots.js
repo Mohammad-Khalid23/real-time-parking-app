@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase'
 import RaisedButton from 'material-ui/RaisedButton';
 
-import { BrowserRouter as Link } from 'react-router-dom';
-
-
-
 class ViewSlots extends Component {
     constructor() {
         super()

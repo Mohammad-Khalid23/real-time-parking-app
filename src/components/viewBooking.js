@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import App from '../App.js'
 import * as firebase from 'firebase'
-import NavBar from './appBar.js'
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 
@@ -28,7 +26,6 @@ class ViewBooking extends Component {
     componentWillMount() {
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
-                const userId = firebase.auth().currentUser.uid
                 const bookRef = firebase.database().ref('bookings');
                 var parking = [];
                 var keys = []
